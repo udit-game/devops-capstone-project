@@ -119,6 +119,7 @@ def get_accounts(account_id):
 
     return account.serialize(), status.HTTP_200_OK
 
+
 ######################################################################
 # LIST ALL ACCOUNTS
 ######################################################################
@@ -174,6 +175,3 @@ def delete_accounts(account_id):
         account.delete()
 
     return "", status.HTTP_204_NO_CONTENT
-
-
-
